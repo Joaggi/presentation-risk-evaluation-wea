@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/jagallegom.css" id="theme">
+ 
+
+		<!-- Theme used for syntax highlighted code -->
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<img src="resources/logo-un.png" style="width: 220px; margin-right: 20%;" />
+				<img src="resources/logo-ud.png" style="width: 280px; margin-right: 30px;" />
+				<img src="resources/logo-ud.png" style="width: 280px; margin-right: 30px;" />
+				<h2 style="margin-top: 30px;">Risk Automatic Prediction for Social Economy Companies using Camels</h2>
+				<h4 style="font-weight: 100; margin-top: 40px;">Joseph A. Gallego-Mejia / Daniela Martin-Vega / Fabio González</h4>
+				<b style="font-weight: 80; font-size: 20px;">jagallegom@unal.edu.co / dmartinv@correo.udistrital.edu.co / fagonzalezo@unal.edu.co</b>
+				<h6 style="font-weight: 100; font-size: 18px; margin-top: 20px;">
+					MindLab – Bogota, Colombia
+				</h6>
+			</section>
+
+					
+				<section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+					<div>
+						<div>
+							<ul>
+								<li >Predict the risk of bankruptcy of a Social Economy Enterprise (SEC).</li>							
+						</div>
+					</div>
+					
+				</section>
+
+				<section data-auto-animate class="future" data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+					<div>
+						<div>
+							<ul>
+								<li >Predict the risk of bankruptcy of a Social Economy Enterprise (SEC).</li>							
+								<li >Inspect every SEC is not possible.</li>
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+
+				<section data-auto-animate class="future" data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+					<div>
+						<div>
+							<ul>
+								<li >Predict the risk of bankruptcy of a Social Economy Enterprise (SEC).</li>							
+								<li >Inspect every SEC is not possible.</li>
+								<li >Supervise each SEC is a time consuming task.</li>
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+
+				<section data-auto-animate class="future" data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+					<img src="resources/risk.png" alt="Websocket" width="45%" style="float: right">
+					<div style="width: 55%;">
+						<div>
+							<ul>
+								<li >Predict the risk of bankruptcy of a Social Economy Enterprise (SEC).</li>							
+								<li >Inspect every SEC is not possible.</li>
+								<li >Supervise each SEC is a time consuming task.</li>
+								<li >How to automatically evaluate the risk of each SEC?</li>
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+      
+
+				<section data-auto-animate class="future"  style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+
+          The components of CAMELS are:
+						<div>
+							<ul>
+                <li>    (C)apital adequacy
+                </li>
+                <li>    (A)ssets
+                </li>
+                <li>    (M)anagement capability
+                </li>
+                <li>    (E)arnings
+                </li>
+                <li>    (L)iquidity
+                </li>
+                <li>    (S)ensitivity
+                </li>
+
+							</ul>
+						</div>
+					
+				</section>
+      
+
+	<section data-auto-animate class="future"  style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+
+          The components of CAMELS are:
+						<div>
+							<ul>
+                <li>    A scale of 1 implies that a bank exhibits a robust performance, is sound, and complies with risk management practices.
+          </li>
+                <li>    A scale of 2 means that an institution is financially sound with moderate weaknesses present.
+          </li>
+                <li>    A scale of 3 suggests that the institution shows a supervisory concern in several dimensions.
+          </li>
+                <li>    A scale of 4 indicates that an institution has unsound practices, thus is unsafe due to serious financial problems.
+          </li>
+                <li>    A rating of 5 shows that an institution is fundamentally unsound with inadequate risk management practices.
+          </li>
+ 							</ul>
+						</div>
+					
+				</section>
+      
+
+      <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk Automatic Prediction</h1>
+
+          The problems with CAMELS computation:
+						<div>
+							<ul>
+                <li>We do not have the estimation until the company send the information to review</li>
+                <li>We can not predict what wold be the CAMELS value of a company in the next period</li>
+
+							</ul>
+						</div>
+					
+				</section>
+      
+
+
+
+				<section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Enterprise Properties Variables</h1>
+					<div style="width: 50%; float:left;">
+						<div>
+							<ul>
+                <li>Type of organization   
+                </li>
+                <li> Whether it is a cooperative, fund or other type of organization.    
+                </li>
+                <li> Type of company: Multi-active, employee funds.                      
+                </li>
+                <li> Type of supervision: 1,2,3.                                         
+                </li>
+                <li> Group Niif of the organization                                      Department of the organization                                      
+                </li>
+                <li> Municipality of the organization                                    
+                </li>
+                <li> Category of the organization                                        
+                </li>
+							</ul>
+						</div>
+					</div>
+	
+					<div style="width: 50%; float:right;">
+						<div>
+							<ul>
+  
+                <li> Number of associates                                                
+                </li>
+                <li> Number of employees                                                 
+                </li>
+                <li> Number of offices                                                   
+                </li>
+                <li> Number of correspondents                                            
+                </li>
+                <li> Number of savers                                                    
+                </li>
+                <li> Number of debtors                                                   
+                </li>
+                <li> Total assets of the organization 
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+				<section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Risk and Camels Variables</h1>
+					<div style="width: 50%; float: left;">
+						<div>
+							<ul>
+                <li>Consolidated risk rating                                            
+                </li>
+                <li>Risk rating                                                         
+                </li>
+                <li>Camel rating                                                        
+                </li>
+                <li>Credit risk                                                         
+                </li>
+						</ul>
+						</div>
+					</div>
+					<div style="width: 50%; float: right;">
+						<div>
+							<ul>
+                 <li>Liquidity risk                                                      
+                </li>
+                <li>Operational Risk                                                    
+                </li>
+                <li>Sarassoft risk    
+                </li>
+
+
+						</ul>
+						</div>
+					</div>
+	          
+				</section>
+
+				<section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Variational Variables</h1>
+					<div style="width: 50%;float: left">
+						<div>
+							<ul>
+                <li>Variation between two consecutive periods of associates             
+                </li>
+                <li> Variation between two consecutive periods of employees              
+                </li>
+                <li> Change between two consecutive periods in the number of offices     
+                </li>
+                <li> Change in the number of savers between two consecutive periods      
+                </li>
+                <li> Variation between two consecutive periods in the number of debtors. 
+                </li>
+							</ul>
+						</div>
+					</div>
+	
+					<div style="width: 50%;float: right">
+						<div>
+							<ul>
+  
+                <li> Change between two consecutive periods in total assets           
+                </li>
+                <li> Variation between two consecutive periods of gross portfolio  
+                </li>
+                <li> Variation between two consecutive periods of the consumer portfolio 
+                </li>
+                <li> Variation between two consecutive periods of the housing portfolio  
+                </li>
+ 							</ul>
+						</div>
+					</div>
+					
+				</section>
+
+	
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Bankruptcy Risk Model</h1>
+					<img src="resources/blackbox.svg" > </img><br>
+				</section>
+
+
+ 
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Experimental Setup: Dataset</h1>
+					<img src="resources/data.png" > </img><br>
+				</section>
+	
+
+        <section data-auto-animate class="future"style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Window Model</h1>
+					<img src="resources/models.png" width="80%"> </img><br>
+				</section>
+
+	
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/first.png" style="width:20%; float: left" > </img>
+					<img src="resources/second.png" style="width:48%; float: center"> </img>
+					<img src="resources/third.png" style="width:32%; float: right"> </img>
+				</section>
+		
+  	
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/first.png" width="30%"> </img><br>
+				</section>
+		
+  	
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/first.png" style="width:20%; float: left" > </img>
+					<img src="resources/second.png" style="width:48%; float: center"> </img>
+					<img src="resources/third.png" style="width:32%; float: right"> </img>
+				</section>
+      
+    	
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/second.png" width="80%"> </img><br>
+				</section>
+		
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/first.png" style="width:20%; float: left" > </img>
+					<img src="resources/second.png" style="width:48%; float: center"> </img>
+					<img src="resources/third.png" style="width:32%; float: right"> </img>
+				</section>
+	     
+    	
+        <section data-auto-animate class="future"  data-visibility="uncounted" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<img src="resources/third.png" width="50%"> </img><br>
+				</section>
+		
+    
+
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Final Proposed Model</h1>
+					<img src="resources/model.svg" width="90%"> </img><br>
+				</section>
+
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Accuracy Results</h1>
+\[
+\begin{array}[c]{|c|c|c|c|c|}
+\hline
+Model & Random  & Neural  & SVM & Logist \\
+&Forest & Networks & & Regression\\
+\hline
+\text{Chart of account (CA)} +  & \bf{72\%} & 69.3\% & 70.1\% & 65.5\% \\
+\text{Descriptive variables (DV)} & & & & \\ 
+\text{CA + DV} +  & \bf{70.95\%} & 68.3\% & 68.2\% & 63.5\%\\
+\text{Variation between periods (VBP)}  & & & & \\
+\text{CA + DV + VBP} + & \bf{76.66\%} & 75.5\% & 74.5\% & 70.3\%\\
+\text{CAMELS/RISK + MI}   & & & & \\
+\hline
+\end{array}
+\]
+				</section>
+
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Confusion Matrix Results</h1>
+\[
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+           & \textbf{1}    & \textbf{2}    & \textbf{3}    & \textbf{4}   & \textbf{5}   \\ \hline
+\textbf{1} & \textbf{14%} & 79\%          & 7\%           &              &              \\ \hline
+\textbf{2} &               & \textbf{80%} & 20\%          &              &              \\ \hline
+\textbf{3} &               & 33\%          & \textbf{67%} & 1\%          &              \\ \hline
+\textbf{4} &               & 7\%           & 84\%          & \textbf{9%} &              \\ \hline
+\textbf{5} &               & 100\%         &               &              & \textbf{0%} \\ \hline
+\end{array}\]
+				</section>
+
+
+        <section data-auto-animate class="future" style="top: 99.5px; display: none;" hidden=""
+					aria-hidden="true">
+					<h1 data-auto-animate-target="">Developed API</h1>
+					<img src="resources/api.png" > </img><br>
+				</section>
+
+
+
+
+			<section data-auto-animate="running"  class="future" style="top: 312px; display: none;" hidden=""
+			aria-hidden="true">
+				<h2 data-auto-animate-target="11">Conclusions</h2>
+				<ul>
+					<li>A machine learning model is proposed to assess risk</li>
+				</ul>
+			</section>
+
+			<section data-auto-animate="running" data-visibility="uncounted" class="future" style="top: 312px; display: none;" hidden=""
+			aria-hidden="true">
+				<h2 data-auto-animate-target="11">Conclusions</h2>
+				<ul>
+					<li>A machine learning model is proposed to assess risk</li>
+					<li>The use of inter-period variations improves the accuracy of the model</li>
+				</ul>
+			</section>
+
+			<section data-auto-animate="running" data-visibility="uncounted" class="future" style="top: 312px; display: none;" hidden=""
+			aria-hidden="true">
+				<h2 data-auto-animate-target="11">Conclusions</h2>
+				<ul>
+					<li>A machine learning model is proposed to assess risk</li>
+					<li>The use of inter-period variations improves the accuracy of the model</li>
+					<li>The addition of macroeconomic variables improves the accuracy and recall of the model</li>
+				</ul>
+			</section>
+
+
+
+			<section data-auto-animate="running" data-visibility="uncounted" class="future" style="top: 312px; display: none;" hidden=""
+			aria-hidden="true">
+				<h2 data-auto-animate-target="11">Conclusions</h2>
+				<ul>
+					<li>A machine learning model is proposed to assess risk</li>
+					<li>The use of inter-period variations improves the accuracy of the model</li>
+					<li>The addition of macroeconomic variables improves the accuracy and recall of the model</li>
+					<li>Oversampling and undersampling is a neccesary step</li>
+				</ul>
+			</section>
+
+
+			
+
+
+			
+		</div>
+
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			width: 1200,
+			heigth: 800,
+			controls: false,
+			progress: true,
+			center: true,
+			hash: true,
+			margin: 0.04,
+			// minScale: 2.0,
+			// maxScale: 2.0,
+			//autoAnimate: false,
+			//transition: 'none',
+			slideNumber: 'c/t',
+			fragments: true,
+    katex: {
+        version: 'latest',
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+       ],
+       ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+ 
+		// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath,  RevealMath.KaTeX]
+      ,
+			dependencies: [
+				{ src: 'inline_svg.js', async: true }
+			]
+		});
+
+  Reveal.configure({ pdfMaxPagesPerSlide: 1 })
+	</script>
+	
+	</body>
+</html>

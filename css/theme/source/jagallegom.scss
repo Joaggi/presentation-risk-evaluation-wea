@@ -1,0 +1,108 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 25px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.0em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+$heading5Size: 0.7em;
+$heading6Size: 0.7em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+//.reveal .controls {
+//    margin-bottom: 30px;
+//}
+
+.footnote {
+    font-size: 0.5em !important;
+    color: #989719 !important;
+}
+
+ul {
+    padding-top: 40px;
+  }
+
+li {
+    margin:0 0 20px 0;   
+    font-size: 25px;
+ }
+
+
+.container{
+    display: flex;
+}
+.left-col{
+    flex-grow: 2;
+}
+
+.right-col{
+    flex-grow: 2;
+}
+
+.image-kde #kde{
+    opacity: 100%;
+}
+
+.image-kde #gaussian{
+    opacity: 50%;
+}
+
+
+.image-gaussian #kde{
+    opacity: 50%;
+}
+
+.image-gaussian #gaussian{
+    opacity: 100%;
+}
+
+h5{
+    font-size: 23px;
+}
+h6{
+    font-size: 20px;
+}
+
+.reveal .slide-number {
+
+    font-size: 24pt;
+    color: #ffffff; 
+
+}
